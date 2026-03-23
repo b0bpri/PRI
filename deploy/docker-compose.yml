@@ -49,7 +49,7 @@ services:
     environment:
       - DOCKER_API_VERSION=1.44
       - WATCHTOWER_CLEANUP=true    
-    restart: unless-stopped              # ✅ Lepsze niż always
+    restart: unless-stopped
     command: --interval 3600 prib prif 
 
 networks:
